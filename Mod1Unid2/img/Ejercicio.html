@@ -1,56 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DISEÑO DE UN CV</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(5, 63, 5);
+            margin: 0;
+            padding: 200px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .contenedor {
+            max-width: 1000px;
+            padding: 100px;
+            background-color: white;
+            border-radius: 10px;
+
+        }
+
+        h1,
+        h2 {
+            color: rgb(5, 63, 5);
+        }
+
+        h3 {
+            color: rgb(97, 0, 0);
+        }
+
+        p {
+            color: black;
+            line-height: 1.6;
+        }
+
+        img {
+            width: 180px;
+            border-radius: 20%;
+            margin-bottom: 50px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .certificado {
+            font-style: italic;
+            color: red;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>FRANCO TOMAS TISSERA</h1>
-    <!-- uso foto al azar-->
-    <img src="ImagenYo.jpg" alt="Foto franco">
-    <p> Soy un profesional responsable y comprometido, con una notable predisposición para el trabajo en
-        equipo y una actitud proactiva para enfrentar desafíos y alcanzar objetivos. Mi enfoque se centra en la
-        colaboración efectiva y en la optimización de procesos, contribuyendo significativamente al éxito de los
-        proyectos en los que participo</p>
-    <h2>EDAD: 24 Años</h2>
-    <h3>DOMICILIO: Olegario Correa 789, B° Alto Alberdi</h3>
-    <h3>CONTACTO:</h3>
-    <ul>
-        <li>Telefono: 3512631587</li>
-        <li>Email: frantissera18@gmail.com</li>
-    </ul>
-    <h2>EXPERIENCIA LABORAL</h2>
-    <h3>Ejercito Argentino</h3>
-    <!-- comentario: no voy a colocar todas las experiencias laborales -->
-    <p> Compañía de Ingenieros Paracaidistas 4, Villa Carlos Paz,
-        Córdoba</p>
-    <ul>
-        <li>Experto en seguridad con experiencia en turnos 24/7.</li>
-        <li> Capacitado en combate en localidades, radio operador, asalto aereo y buceo básico.</li>
-        <li>Conocimientos en primeros auxilios y atención médica de emergencia.</li>
-    </ul>
-    <h2>EDUCACIÓN</h2>
-    <h3>Secundaria Completa</h3>
-    <p>CED (Centro Educativo de Adultos) - Título de Secundaria Completa</p>
-    <h3>Cursos</h3>
-    <ul>
-        <ol>
-            <li> Servicio Técnico de Celulares</li>
-            <p>#Certificado en ICAMES</p>
-            <li>Tiro Basico Con Arma Corta</li>
-            <P>#Certificado en LINSEGUR</P>
-            <li>Primeros Auxilios</li>
-            <p>#Certificado en Cruz Roja</p>
-        </ol>
-    </ul>
-    <h2>IDIOMAS</h2>
-    <h3>Inglés</h3>
-    <p>Nivel: 1</p>
-    <h3>Portugués</h3>
-    <p>Nivel: 2</p>
+    <div class="contenedor">
+        <div class="center">
+            <h1>FRANCO TOMÁS TISSERA</h1>
+            <img src="ImagenFranco.jpg" alt="Foto de Franco">
+
+            <h2>Contacto</h2>
+            <ul>
+                <li>Teléfono: 3512631587</li>
+                <li>Email: frantissera18@gmail.com</li>
+            </ul>
+
+            <h2>Experiencia Laboral</h2>
+            <h3>Ejército Argentino</h3>
+            <p>Compañía de Ingenieros Paracaidistas 4, Villa Carlos Paz, Córdoba</p>
+            <ul>
+                <li>Experto en seguridad con experiencia en turnos 24/7.</li>
+                <li>Capacitado en combate en localidades, radio operador, asalto aéreo y buceo básico.</li>
+                <li>Conocimientos en primeros auxilios y atención médica de emergencia.</li>
+            </ul>
+
+            <h2>Educación</h2>
+            <h3>Secundaria Completa</h3>
+            <p>CED (Centro Educativo de Adultos) - Título de Secundaria Completa</p>
+
+            <h3>Cursos</h3>
+            <ul>
+                <li>Servicio Técnico de Celulares</li>
+                <p class="certificado">#Certificado en ICAMES</p>
+                <li>Tiro Básico con Arma Corta</li>
+                <p class="certificado">#Certificado en LINSEGUR</p>
+                <li>Primeros Auxilios</li>
+                <p class="certificado">#Certificado en Cruz Roja</p>
+            </ul>
+
+            <h2>Idiomas</h2>
+            <h3>Inglés</h3>
+            <p>Nivel: 1</p>
+            <h3>Portugués</h3>
+            <p>Nivel: 2</p>
 </body>
 
 </html>
